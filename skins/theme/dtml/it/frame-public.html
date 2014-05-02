@@ -1,8 +1,35 @@
-<html>
-{$head} 
-<body>
-{$header}
-{$body}
-{$footer}
-</body>
+<!DOCTYPE html>
+<html lang="en">
+
+{$head}
+
+    <body id="page1" onLoad="new ElementMaxHeight();">
+	<div class="tail-top">
+			{$header}
+			
+		<div class="container">
+			<div class="container-menu-left">
+			{$menu}
+			</div>
+
+		    <div class="container-body">
+		      {$body}
+		      
+		    </div>
+		    
+		</div>  
+		
+		    <section id="content">
+			  <div class="container">
+			  {$homeBottom}
+			  </div>
+		    </div>
+	</div>
+
+
+	{$footer}
+
+
+    </body>
+
 </html>

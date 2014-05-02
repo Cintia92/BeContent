@@ -1,0 +1,40 @@
+{if $instances != null}
+    <ul id="navigation" style="margin-top: 66px;">
+        {foreach from=$instances item=instance}
+            {if $instance->parent == null}
+                {if $smarty.get != null}
+                    {foreach from=$smarty.get key=k item=v}
+                        {if $instance->link == $smarty.server.SCRIPT_NAME|replace:'/':''|cat:{"?"}|cat:{$k}|cat:{"="}|cat:{$v}}
+                            <li class="current">
+                            <a href="{$instance->link}">{$instance->entry}</a>
+                            {else}
+                                <li>
+                                <a href="{$instance->link}">{$instance->entry}</a>
+                        {/if}
+                    {/foreach}
+                {elseif $instance->link == $smarty.server.SCRIPT_NAME|replace:'/':'' || $smarty.server.SCRIPT_NAME == ''}
+                    <li class="current">
+                        <a href="{$instance->link}">{$instance->entry}</a>
+                {else}
+                    <li>
+                    <a href="{$instance->link}">{$instance->entry}</a>
+                {/if}
+                {if $instance->sys_menu != null}
+                    <ul>
+                        {foreach from=$instance->sys_menu item=child_menu}
+                            {if $child_menu->linked_page == 0}
+                                <li class="text_capitalize">
+                                    <a href="{$child_menu->link}">{$child_menu->entry}</a>
+                                </li>
+                            {else}
+                                <li class="text_capitalize"><a href="page.php?sys_page_id={$child_menu->linked_page}">{$child_menu->entry}
+                                    </a></li>
+                            {/if}
+                        {/foreach}
+                    </ul>
+                {/if}
+                </li>
+            {/if}
+        {/foreach}
+    </ul>
+{/if}

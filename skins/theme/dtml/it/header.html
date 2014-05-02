@@ -1,45 +1,56 @@
-<!--start: Header -->
-	<header>
-		
-		<!--start: Container -->
-		<div class="container">
-						
-			<!--start: Row -->
-			<div class="row-fluid">
-					
-				<!--start: Navigation -->
-				<div class="navigation"> 
-				
-					<div class="navbar navbar-fixed-top">
-			    		<div class="navbar-inner">
-			          		<a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
-			            		menu
-			          		</a>
-			          		<div class="nav-collapse collapse">
-			            		<ul class="nav">
-									<li><a href="#" class="home">Home</a></li>
-			              			<li><a href="#" class="services">Services</a></li>
-									<li><a href="#" class="pricing">Pricing</a></li>
-									<li><a href="#" class="portfolio">Portfolio</a></li>
-									<li><a href="#" class="about">About</a></li>
-									<li><a href="#" class="team">Team</a></li>
-									<li><a href="#" class="contact">Contact</a></li>
-			            		</ul>
-			          		</div>
-			        	</div>
-			      	</div>
-				
-				
-				</div>	
-				<!--end: Navigation -->	
-					
-			</div>
-			<!--end: Row -->
-			
-		</div>
-		<!--end: Container-->			
-			
-	</header>
+<header>
 
-	<!--end: Header-->
-	<!-- start: 1st Page - Home -->
+	<div class="container">
+	
+
+			<div id="beCommerce">
+			<form action="login.php" method="post" id="login-form">
+			
+				<fieldset>
+
+						<input type="text" name="username" placeholder="Username" />
+
+						<input type="password" name="password" placeholder="Password" />
+
+					  <input type="submit" value="login" />
+					    <input type="reset" value="reset" />
+				</fieldset>				
+			</form>
+			</div>  
+
+
+			<div class="header-box">
+				<div class="left">
+					<div class="right">
+						<nav>
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="hosting.html">Hosting</a></li>
+								<li><a href="solutions.html">Solutions</a></li>
+								<li><a href="support.html">Support</a></li>
+								<li><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</nav>
+				    <!--TRACCIA CARRELLO-->	
+					  <div class="right-cart">
+					    <img src="skins/theme/images/layout/cart.png" /><br />
+					  </div>
+					  <div class="right-cart">
+						    <span class="userlinks">
+							  <p class="alignRight"><a href="cart.php">Vai al Carrello</a>  (<span class="simpleCart_quantity"></span>)<br> 
+							  <span class="simpleCart_total"></span> 
+							  </p>
+						      </span>        	  
+					  </div>
+				    <!--FINE TRACCIA CARRELLO-->
+						
+					</div>
+				</div>
+			</div>
+
+
+
+	</div>		
+	
+	</header>

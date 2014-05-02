@@ -1,0 +1,279 @@
+/* STILI GENERALI */
+
+h2 { margin:20px 0 10px 0; font-weight:normal; font-size:18px; }
+
+.alignRight { 
+  text-align:right;
+  padding-right:10%;
+  
+}
+
+/* STILI PRODOTTO */
+.simpleCart_shelfItem { 
+	float:center; 
+	display:inline; 
+	width:200px;
+	line-height:100%;
+	position:relative;
+	background:#EEEEEE;
+	text-align:center;
+	-moz-border-radius:5px; 
+	border-radius:5px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.simpleCart_shelfItem.last {
+	margin-right:0;
+}
+
+.simpleCart_shelfItem p { 
+	margin:10px 0 0 0; 
+}
+
+.item_name {
+	font:bold;
+	font-size:20px;
+	margin:10px 0;
+	padding:0;
+}
+
+.item_size { font-size:12px; }
+
+.item_add {
+
+}
+
+.item_price{
+text-align:center;
+display:block;
+font-size:25px;
+line-height:1.2em;
+letter-spacing:-1px;
+padding-bottom:10px
+}
+
+
+/* STILI CARRELLO */
+/*Dimensioni carrello */
+.simpleCart_items {
+	float:left; 
+	display:inline;
+	width:80%;
+	-moz-border-radius:5px; 
+	border-radius:5px;
+	padding-bottom:10px;
+}
+
+.itemContainer {
+	width:100%;
+	float:left;
+	display:inline;
+	border-bottom:1px solid #CCCCCC;
+	padding-bottom:10px;
+}
+
+.cartHeaders {
+	font-weight:bold;
+	font-size:11px;
+	color: #666666;
+	width:100%;
+	float:left;
+	display:inline;
+	border-bottom:1px solid #CCCCCC;
+	padding-bottom:10px;
+	
+}
+
+.itemContainer div, .cartHeaders div {
+	float:left;
+	display:inline;
+	border-right:1px solid #CCCCCC;
+	margin:10px 0 0 0;
+	text-align:center;
+	width:80px;
+}
+
+div.itemName {
+	font-weight:bold;
+	width:220px;
+}
+
+div.itemTotal {
+	border-right:none;
+}
+
+
+#cartTotal {
+	text-align:right;
+	float:left;
+	margin:20px 0;
+	width:80%;
+	margin-top:30px;
+	margin-bottom:40px;
+}
+
+#cartTotal h5 {
+	font-size:20px;
+}
+
+
+.order {
+	margin-top:30px;
+	background:url(../images/layout/handle.png) no-repeat right top;
+	width:60%;
+  
+}
+
+.order span {
+	font-size:14px;
+}
+
+.order h2 {
+	font-size:30px;
+}
+
+
+#cartTotal .simpleCart_total .simpleCart_shippingCost .simpleCart_finalTotal {
+	margin-right:15px;
+	padding:5px;
+	font-weight:bold;
+	margin-left:5px;
+
+}
+
+
+/* STILI BOTTONI CHECKOUT / SVUOTA CARRELLO */
+.simpleCart_empty{
+	color:#FFFFFF;
+	background:#CC0000;
+	font-size:10px;
+	padding:5px;
+	margin-left:5px;
+	text-transform:uppercase;
+	-moz-border-radius:5px; border-radius:5px;
+}
+
+.Cart_empty{
+	width:48px; 
+	height:48px; 
+	background:url(img/template/shopping-cart-insert.png);
+  
+}
+
+
+.Cart_empty:hover{
+	width:48px; 
+	height:48px; 
+	background:url(img/template/cart.png);
+    
+}
+
+
+.simpleCart_checkout{
+	color:#FFFFFF;
+	background: #f2890c;
+	font-size:10px;
+	padding:5px;
+	margin-left:5px;
+	text-transform:uppercase;
+	-moz-border-radius:5px; border-radius:5px;
+}
+
+
+.right-cart{
+  
+  	float: right;
+	
+}
+.right-cart img{
+  
+  	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+}
+
+.right-cart a{
+	color:#ffffff;
+}
+.right-cart a:hover{
+	color:#ffa500;
+}
+
+.right-cart span{
+	color:#ffffff;
+
+}
+
+
+
+/*IMMAGINI*/
+.img_sprite
+	{background:url(../img/mySprite.png);}
+
+
+.img_iconeBig {
+	height:128px;
+}
+	
+.img_iconeSmall {
+	height:61px;
+}
+
+/* IconeBig */
+.doctor {width:103px; background-position:-2px -2px;}
+.octopus {width:89px; background-position:-106px -2px;}
+.wolf {width:115px; background-position:-196px -2px;}
+.star {width:126px; background-position:-312px -2px;}
+.dog {width:128px; background-position:-439px -2px;}
+
+ 
+/* IconeSmall*/
+.css {width:61px; background-position:-2px -133px;}
+.activityMonitor {width:58px; background-position:-64px -133px;}
+.dashboard {width:51px; background-position:-123px -133px;}
+.quicktime {width:53px; background-position:-175px -133px;}
+.scanner {width:74px; background-position:-229px -133px;}
+
+
+/*Vasplus Button*/
+.vpb_general_button 
+{
+ background-color: #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #afafaf));
+  background-image: -webkit-linear-gradient(top, #000000, #afafaf);
+  background-image: -moz-linear-gradient(top, #000000, #afafaf);
+  background-image: -ms-linear-gradient(top, #000000, #afafaf);
+  background-image: -o-linear-gradient(top, #000000, #afafaf);
+  background-image: linear-gradient(top, #000000, #afafaf);
+  box-shadow: 0 2px 3px #666666;
+  -moz-box-shadow: 0 2px 3px #666666;
+  -webkit-box-shadow: 0 2px 3px #666666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 2px;
+  border-radius: 5px;
+  color: #fff;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:14px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  padding:4px;
+  text-decoration:none;
+  margin-left:20px;
+}
+.vpb_general_button:hover 
+{
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #afafaf));
+    background-image: -webkit-linear-gradient(top, #afafaf, #000000);
+    background-image: -moz-linear-gradient(top, #afafaf, #000000);
+    background-image: -ms-linear-gradient(top, #afafaf, #000000);
+    background-image: -o-linear-gradient(top, #afafaf, #000000);
+    background-image: linear-gradient(top, #000000, #afafaf);
+    box-shadow: 0 2px 3px #666666;
+	-moz-box-shadow: 0 2px 3px #666666;
+	-webkit-box-shadow: 0 2px 3px #666666;
+	-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;
+    cursor: pointer; 
+}
